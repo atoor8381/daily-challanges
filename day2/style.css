@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(16, 14, 14);
+    color: bisque;
+    height: 100%;
+    width: 100%;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+}
+.table{
+    width: 50vw;
+}
+.heading{
+    min-width: 100px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+.controls{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+.controls button{
+    height: 50px;
+    background-color: bisque;
+    font-weight: bolder;
+}
+.form{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: bisque;
+    color: black;
+    font-weight: bolder;
+    /* this transform thing is used to shift the element 50 % of its own width */
+}
+.show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#addnewform{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#addtask-form{
+    width: 40px;
+    height: 30px;
+}
