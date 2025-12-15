@@ -17,7 +17,7 @@ body{
 .emoji{
     min-width: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     flex-direction: column;
     gap: 10px;
