@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Brightness Control</title>
+<style>
+  body {
+    background-color: #222;
+    color: #fff;
+    transition: filter 0.2s;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  input[type="range"] {
+    width: 300px;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Adjust Brightness</h1>
+<input type="range" id="brightnessSlider" min="50" max="150" value="100">
+
+<script>
+  const slider = document.getElementById('brightnessSlider');
+
+  slider.addEventListener('input', () => {
+    const value = slider.value;
+    document.body.style.filter = `brightness(${value}%)`;
+  });
+</script>
+
+</body>
+</html>
