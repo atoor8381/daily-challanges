@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav by Raul Dronca</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  
+    <div class="nav-wrap">
+      <div class="bubble active"></div>
+      <div class="bubble hover"></div>
+      <nav class="nav">
+        <a class="active" href="#">Projects</a>
+        <a href="#">Gallery</a>
+        <a href="#">Studio</a>
+        <a href="#">Profile</a>
+      </nav>
+    </div>
+
+    <script>
+      const links = document.querySelectorAll("nav a");
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          links.forEach((l) => l.classList.remove("active"));
+          link.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
